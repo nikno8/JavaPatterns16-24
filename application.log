@@ -1,0 +1,339 @@
+853  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+862  [main] INFO  c.n.j.pract16.Pract16Application – Starting Pract16Application using Java 17.0.6 on LAPTOP-VVH4TB4R with PID 9404 (C:\Users\nikit\IdeaProjects\Java16-24 2\target\classes started by nikit in C:\Users\nikit\IdeaProjects\Java16-24 2)
+864  [main] INFO  c.n.j.pract16.Pract16Application – No active profile set, falling back to 1 default profile: "default"
+2013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2084 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2888 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8088 (http)
+2901 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8088"]
+2902 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2902 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.64]
+3050 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3051 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2106 ms
+3324 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+3400 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.9.Final
+3619 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3750 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4013 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4051 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4921 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4931 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5119 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6085 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration – 
+
+Using generated security password: 83989fe0-3d66-45a7-908f-b8a276fe2594
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+6375 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@770c3ca2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1267f832, org.springframework.security.web.context.SecurityContextPersistenceFilter@54faa040, org.springframework.security.web.header.HeaderWriterFilter@58fb5b8f, org.springframework.security.web.authentication.logout.LogoutFilter@3f36c191, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79d8075c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@19439ec4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@711261c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cc4f6bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f5076f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73eaae1e, org.springframework.security.web.session.SessionManagementFilter@7fd3c38b, org.springframework.security.web.access.ExceptionTranslationFilter@40c92dfa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@549be307]
+6398 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+6432 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8088"]
+6453 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8088 (http) with context path ''
+6475 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+6488 [main] INFO  c.n.j.pract16.Pract16Application – Started Pract16Application in 6.146 seconds (JVM running for 7.331)
+6733 [RMI TCP Connection(3)-192.168.37.103] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6733 [RMI TCP Connection(3)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6734 [RMI TCP Connection(3)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+66493 [pool-2-thread-1] INFO  c.n.j.pract16.aop.CoolAspect – Pameters: {}
+66514 [pool-2-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
+java.lang.RuntimeException: java.nio.file.AccessDeniedException: C:\Users\vyacheslavbotoev
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl.doScheduledTask(SchedulerServiceImpl.java:49)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl$$FastClassBySpringCGLIB$$88c6252b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl$$EnhancerBySpringCGLIB$$23a4fe0b.doScheduledTask(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.file.AccessDeniedException: C:\Users\vyacheslavbotoev
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:521)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl.doScheduledTask(SchedulerServiceImpl.java:42)
+	... 30 common frames omitted
+856121 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+856126 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+856131 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1217 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+1234 [main] INFO  c.n.j.pract16.Pract16Application – Starting Pract16Application using Java 17.0.6 on LAPTOP-VVH4TB4R with PID 21892 (C:\Users\nikit\IdeaProjects\Java16-24 2\target\classes started by nikit in C:\Users\nikit\IdeaProjects\Java16-24 2)
+1236 [main] INFO  c.n.j.pract16.Pract16Application – No active profile set, falling back to 1 default profile: "default"
+2914 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+4337 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8088 (http)
+4354 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8088"]
+4355 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+4355 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.64]
+4584 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+4585 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3252 ms
+5062 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5166 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.9.Final
+5527 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5742 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+6091 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6153 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7579 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7594 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+7898 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9543 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration – 
+
+Using generated security password: b7bfdd19-5078-48fd-bc9d-17ab95526623
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+10048 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@969c2f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bbc11ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@57cc0333, org.springframework.security.web.header.HeaderWriterFilter@7fd7085d, org.springframework.security.web.authentication.logout.LogoutFilter@6768dc74, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@268f126f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58922a00, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d741200, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cb87009, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b8ac512, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36e11b60, org.springframework.security.web.session.SessionManagementFilter@9120cb5, org.springframework.security.web.access.ExceptionTranslationFilter@2446597e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44b5b54]
+10083 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+10143 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8088"]
+10181 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8088 (http) with context path ''
+10218 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10234 [main] INFO  c.n.j.pract16.Pract16Application – Started Pract16Application in 9.753 seconds (JVM running for 11.366)
+10795 [RMI TCP Connection(1)-192.168.37.103] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10796 [RMI TCP Connection(1)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10799 [RMI TCP Connection(1)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
+58974 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+58979 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+58993 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1176 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+1193 [main] INFO  c.n.j.pract16.Pract16Application – Starting Pract16Application using Java 17.0.6 on LAPTOP-VVH4TB4R with PID 30764 (C:\Users\nikit\IdeaProjects\Java16-24 2\target\classes started by nikit in C:\Users\nikit\IdeaProjects\Java16-24 2)
+1195 [main] INFO  c.n.j.pract16.Pract16Application – No active profile set, falling back to 1 default profile: "default"
+2920 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+4406 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8088 (http)
+4426 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8088"]
+4427 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+4428 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.64]
+4676 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+4676 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3380 ms
+5188 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5287 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.9.Final
+5623 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5835 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+1211 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+1227 [main] INFO  c.n.j.pract16.Pract16Application – Starting Pract16Application using Java 17.0.6 on LAPTOP-VVH4TB4R with PID 43232 (C:\Users\nikit\IdeaProjects\Java16-24 2\target\classes started by nikit in C:\Users\nikit\IdeaProjects\Java16-24 2)
+1228 [main] INFO  c.n.j.pract16.Pract16Application – No active profile set, falling back to 1 default profile: "default"
+6212 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6277 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7716 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3041 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+7733 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3141 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+8027 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8088 (http)
+4523 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8088"]
+4524 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+4525 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.64]
+4769 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+4770 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3448 ms
+9775 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration – 
+
+Using generated security password: 7d67c585-be56-414a-a875-b2c6a7a8c4e4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+5291 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5408 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.9.Final
+10300 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@183435c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69862a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a91027c, org.springframework.security.web.header.HeaderWriterFilter@5bb45afc, org.springframework.security.web.authentication.logout.LogoutFilter@32d3b965, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15ade272, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d91147b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@585718dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e22dadb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c98eaa9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a644d75, org.springframework.security.web.session.SessionManagementFilter@1e186006, org.springframework.security.web.access.ExceptionTranslationFilter@47f677a4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a233d33]
+10343 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+10406 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8088"]
+5745 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8088 (http) with context path ''
+10481 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10496 [main] INFO  c.n.j.pract16.Pract16Application – Started Pract16Application in 10.037 seconds (JVM running for 11.587)
+5950 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+10841 [RMI TCP Connection(2)-192.168.37.103] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10841 [RMI TCP Connection(2)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10844 [RMI TCP Connection(2)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
+6333 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6399 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7787 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7803 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8141 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9862 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration – 
+
+Using generated security password: 269836a6-9b8d-449b-bfeb-d9c937e2c654
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+10397 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29dcad7e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ce1ec7, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b3dc752, org.springframework.security.web.header.HeaderWriterFilter@4b8ac512, org.springframework.security.web.authentication.logout.LogoutFilter@4cc4f6bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20a7ce0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@40c92dfa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@627cb3ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5da41d02, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31dbca5d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30bd6bc8, org.springframework.security.web.session.SessionManagementFilter@69c335c4, org.springframework.security.web.access.ExceptionTranslationFilter@fe38d1e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@501956f9]
+10440 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+10502 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8088"]
+10511 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8088 is already in use
+10517 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+10523 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+10528 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+10534 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Pausing ProtocolHandler ["http-nio-8088"]
+10535 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
+10542 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Stopping ProtocolHandler ["http-nio-8088"]
+10542 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Destroying ProtocolHandler ["http-nio-8088"]
+10565 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+10595 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+57132 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+57138 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+57145 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1171 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+1185 [main] INFO  c.n.j.pract16.Pract16Application – Starting Pract16Application using Java 17.0.6 on LAPTOP-VVH4TB4R with PID 30992 (C:\Users\nikit\IdeaProjects\Java16-24 2\target\classes started by nikit in C:\Users\nikit\IdeaProjects\Java16-24 2)
+1186 [main] INFO  c.n.j.pract16.Pract16Application – No active profile set, falling back to 1 default profile: "default"
+2867 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2980 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+4299 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8088 (http)
+4317 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8088"]
+4318 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+4319 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.64]
+4556 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+4556 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3272 ms
+5030 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5132 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.9.Final
+5449 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5659 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+6044 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6105 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7417 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7432 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+7750 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9309 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration – 
+
+Using generated security password: 5331d32e-ce03-4d9f-9c68-5dfee9db5f45
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+9837 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bede349, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@501956f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1930e8ef, org.springframework.security.web.header.HeaderWriterFilter@1a916120, org.springframework.security.web.authentication.logout.LogoutFilter@27260f9c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@36e11b60, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c7a4986, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@299c86f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f09cb98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29280ca6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fbed6fc, org.springframework.security.web.session.SessionManagementFilter@755fdfad, org.springframework.security.web.access.ExceptionTranslationFilter@57cc0333, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@467e7793]
+9876 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 14 endpoint(s) beneath base path '/actuator'
+9938 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8088"]
+9974 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8088 (http) with context path ''
+10012 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10028 [main] INFO  c.n.j.pract16.Pract16Application – Started Pract16Application in 9.585 seconds (JVM running for 10.951)
+10224 [RMI TCP Connection(1)-192.168.37.103] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10224 [RMI TCP Connection(1)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+10227 [RMI TCP Connection(1)-192.168.37.103] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+70037 [pool-1-thread-1] INFO  c.n.j.pract16.aop.CoolAspect – Pameters: {}
+70049 [pool-1-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
+java.lang.RuntimeException: java.nio.file.AccessDeniedException: C:\Users\vyacheslavbotoev
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl.doScheduledTask(SchedulerServiceImpl.java:49)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl$$FastClassBySpringCGLIB$$88c6252b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl$$EnhancerBySpringCGLIB$$5b5ab811.doScheduledTask(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.file.AccessDeniedException: C:\Users\vyacheslavbotoev
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:521)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl.doScheduledTask(SchedulerServiceImpl.java:42)
+	... 30 common frames omitted
+15533004 [pool-1-thread-1] INFO  c.n.j.pract16.aop.CoolAspect – Pameters: {}
+15533006 [pool-1-thread-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
+java.lang.RuntimeException: java.nio.file.AccessDeniedException: C:\Users\vyacheslavbotoev
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl.doScheduledTask(SchedulerServiceImpl.java:49)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl$$FastClassBySpringCGLIB$$88c6252b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl$$EnhancerBySpringCGLIB$$5b5ab811.doScheduledTask(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.file.AccessDeniedException: C:\Users\vyacheslavbotoev
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:521)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at com.nikno8.java_mirea.pract16.service.SchedulerServiceImpl.doScheduledTask(SchedulerServiceImpl.java:42)
+	... 30 common frames omitted
+15533785 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h15m20s887ms676µs399ns).
+15693230 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+15693233 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+15693235 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.

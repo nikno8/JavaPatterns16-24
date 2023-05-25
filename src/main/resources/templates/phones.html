@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tbody>
+<tr th:each="phones : ${allPhones}">
+    <td th:text="${phones.name}"/>
+    <br>
+</tr>
+</tbody>
+</body>
+</html>

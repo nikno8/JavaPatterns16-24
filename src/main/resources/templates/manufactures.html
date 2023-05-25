@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xml:space="">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+  <tbody>
+      <tr th:each="manu : ${allManufactures}">
+        <td th:text="${manu.name}"/>
+          <br>
+      </tr>
+  </tbody>
+</body>
+</html>
